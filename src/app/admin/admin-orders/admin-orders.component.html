@@ -1,0 +1,15 @@
+<div>
+    <table class="table">
+        <tr>
+            <th>Customer</th>
+            <th>Date</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let order of ordersList">
+            <td>{{ order.shipping.name }}</td>
+            <td>{{ getDate(order.datePlaced) }}</td>
+            <td><a href="">View</a></td>
+        </tr>
+    </table>
+</div>
+

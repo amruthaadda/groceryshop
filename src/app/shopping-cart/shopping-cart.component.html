@@ -1,0 +1,39 @@
+<h1>Shopping Cart</h1>
+<div>
+    <p>you have {{ itemsQuantity }} item(s) in your cart. &nbsp;&nbsp;&nbsp;
+        <button class="btn btn-danger btn-sm" (click)="clearcart()" *ngIf="cartItems.length">Clear Shopping Cart</button>
+    </p>
+    <table class="table" style="width: 60%;">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Product</th>
+                <th class="quantity-text" style="width: 230px;">Quantity</th>
+                <th class="price-text" style="width: 200px;">price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of cartItems; let i=index;">
+                <td>
+                    <div [style.backgroundImage]="'url(' + item.product.imageUrl + ')'" class="thumbnail" alt=""></div>
+                </td>
+                <td>{{ item.product.title }}</td>
+                <!-- <td>{{ item.quantity }}</td> -->
+                <td>
+                    <product-quantity *ngIf="item.quantity" [productQuantity]="item.quantity" [product]="item.product"
+                        (quantityChange)="onQuantityChange(item.product.id, i)"></product-quantity>
+                </td>
+                <td class="price-text">{{ item.product.price * item.quantity | currency : 'INR' : true}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th class="price-text">{{ sum | currency:'INR' : true }}</th>
+            </tr>
+        </tfoot>
+    </table>
+    <button class="btn btn-primary btn-sm" routerLink="/check-out" *ngIf="cartItems.length">Check Out</button>
+</div>

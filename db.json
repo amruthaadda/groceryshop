@@ -1,0 +1,458 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "amrutha@gmail.com",
+      "password": "amrutha",
+      "userName": "Amrutha",
+      "isAdmin": false
+    },
+    {
+      "id": "2",
+      "email": "aswitha@gmail.com",
+      "password": "aswitha",
+      "userName": "Aswitha",
+      "isAdmin": true
+    },
+    {
+      "id": "3",
+      "email": "srujana@gmail.com",
+      "password": "srujana",
+      "userName": "Srujana",
+      "isAdmin": false
+    },
+    {
+      "id": "4",
+      "email": "nandini@gmail.com",
+      "password": "nandini",
+      "userName": "Nandini",
+      "isAdmin": false
+    },
+    {
+      "id": "5",
+      "email": "lakshmi@gmail.com",
+      "password": "lakshmi",
+      "userName": "Lakshmi",
+      "isAdmin": false
+    }
+  ],
+  "categories": [
+    "vegetables",
+    "Leafy Vegetables",
+    "Bread",
+    "Meat",
+    "Fruits",
+    "Spices",
+    "Milk Products"
+  ],
+  "shopping-carts": [
+    {
+      "time": 1648911843730,
+      "id": 1
+    }
+  ],
+  "cart-items": [],
+  "orders": [
+    {
+      "userId": 1,
+      "datePlaced": 1649957365607,
+      "shipping": {
+        "name": "amrutha",
+        "addressLine1": "ffh",
+        "addressLine2": "fgh",
+        "city": "dfgh"
+      },
+      "items": [
+        {
+          "product": {
+            "title": "Brinjal",
+            "imageUrl": "https://www.isaaa.org/kc/cropbiotechupdate/files/images/421202194321AM.jpg",
+            "price": 40
+          },
+          "quantity": 1,
+          "totalPrice": 40
+        },
+        {
+          "product": {
+            "title": "Spinach",
+            "imageUrl": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpbmFjaHxlbnwwfHwwfHw%3D&w=1000&q=80",
+            "price": 20
+          },
+          "quantity": 1,
+          "totalPrice": 20
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "datePlaced": 1649959354826,
+      "shipping": {
+        "name": "dfgh",
+        "addressLine1": "wefg",
+        "addressLine2": "wer",
+        "city": "wert"
+      },
+      "items": [
+        {
+          "product": {
+            "title": "Spinach",
+            "imageUrl": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpbmFjaHxlbnwwfHwwfHw%3D&w=1000&q=80",
+            "price": 20
+          },
+          "quantity": 1,
+          "totalPrice": 20
+        },
+        {
+          "product": {
+            "title": "Brinjal",
+            "imageUrl": "https://www.isaaa.org/kc/cropbiotechupdate/files/images/421202194321AM.jpg",
+            "price": 40
+          },
+          "quantity": 1,
+          "totalPrice": 40
+        }
+      ],
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "datePlaced": 1649959424486,
+      "shipping": {
+        "name": "wer",
+        "addressLine1": "wert",
+        "addressLine2": "werty",
+        "city": "qwert"
+      },
+      "items": [
+        {
+          "product": {
+            "title": "Broad Beans",
+            "imageUrl": "https://cdn.shopify.com/s/files/1/0294/7527/4827/products/Webp.net-resizeimage_12_800x.jpg?v=1592905025",
+            "price": 45
+          },
+          "quantity": 1,
+          "totalPrice": 45
+        }
+      ],
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "title": "Spinach",
+      "price": 20,
+      "category": "Leafy Vegetables",
+      "imageUrl": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpbmFjaHxlbnwwfHwwfHw%3D&w=1000&q=80",
+      "id": 14
+    },
+    {
+      "title": "Brinjal",
+      "price": 40,
+      "category": "vegetables",
+      "imageUrl": "https://www.isaaa.org/kc/cropbiotechupdate/files/images/421202194321AM.jpg",
+      "id": 15
+    },
+    {
+      "title": "Broad Beans",
+      "price": 45,
+      "category": "vegetables",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0294/7527/4827/products/Webp.net-resizeimage_12_800x.jpg?v=1592905025",
+      "id": 16
+    },
+    {
+      "title": "Cabbage ",
+      "price": 45,
+      "category": "vegetables",
+      "imageUrl": "https://marketu.app/wp-content/uploads/2021/05/121212.jpg",
+      "id": 17
+    },
+    {
+      "title": "Capsicum",
+      "price": 55,
+      "category": "vegetables",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0722/2059/products/O4K80m4V_large.jpg?v=1629381786",
+      "id": 18
+    },
+    {
+      "title": "Tomato",
+      "price": 45,
+      "category": "vegetables",
+      "imageUrl": "https://ucanr.edu/sites/MFPOC/files/169402display.jpg",
+      "id": 19
+    },
+    {
+      "title": "Beans",
+      "price": 80,
+      "category": "vegetables",
+      "imageUrl": "https://static.toiimg.com/photo/80251109.cms",
+      "id": 20
+    },
+    {
+      "title": "Beetroot",
+      "price": 45,
+      "category": "vegetables",
+      "imageUrl": "https://cdn.cdnparenting.com/articles/2018/03/224279974-H.jpg",
+      "id": 21
+    },
+    {
+      "title": "Bitter Gourd",
+      "price": 60,
+      "category": "vegetables",
+      "imageUrl": "http://specialtyproduce.com/sppics/9184.png",
+      "id": 22
+    },
+    {
+      "title": "Bottle Gourd",
+      "price": 20,
+      "category": "vegetables",
+      "imageUrl": "https://static.toiimg.com/thumb/84437117.cms?width=400&height=300&resizemode=4&imgsize=835571",
+      "id": 23
+    },
+    {
+      "title": "Carrot",
+      "price": 50,
+      "category": "vegetables",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-carrot-early-nantus-desi-vegetable-seeds-16968687419532_420x.jpg?v=1634203403",
+      "id": 24
+    },
+    {
+      "title": "Cauliflower",
+      "price": 45,
+      "category": "vegetables",
+      "imageUrl": "https://www.thespruce.com/thmb/ytib4VInPZib3zD8Ur-2mCt-tHk=/3130x3130/smart/filters:no_upscale()/how-to-grow-cauliflower-1403494-hero-76cf5f524a564adabb1ac6adfa311482.jpg",
+      "id": 25
+    },
+    {
+      "title": "Coriander Leaves",
+      "price": 20,
+      "category": "Leafy Vegetables",
+      "imageUrl": "https://post.healthline.com/wp-content/uploads/2020/08/732x549_Cilantro_Allergy-1-732x549.jpg",
+      "id": 26
+    },
+    {
+      "title": "Cucumber",
+      "price": 30,
+      "category": "vegetables",
+      "imageUrl": "https://post.healthline.com/wp-content/uploads/2020/09/AN88-Cucumbers-732x549-thumb-1-732x549.jpg",
+      "id": 27
+    },
+    {
+      "title": "Drumstick",
+      "price": 60,
+      "category": "vegetables",
+      "imageUrl": "https://5.imimg.com/data5/EQ/LA/JW/SELLER-52718678/green-drumstick-500x500.jpg",
+      "id": 28
+    },
+    {
+      "title": "Ginger",
+      "price": 240,
+      "category": "Spices",
+      "imageUrl": "https://www.healthifyme.com/blog/wp-content/uploads/2020/06/ginger-cover-1.jpg",
+      "id": 29
+    },
+    {
+      "title": "Green Chili",
+      "price": 40,
+      "category": "Spices",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0017/9234/4153/products/green_chilli_1229x.jpg?v=1562414368",
+      "id": 30
+    },
+    {
+      "title": "Green Plantain",
+      "price": 10,
+      "category": "vegetables",
+      "imageUrl": "https://portalvhds26k4f5tktj3ck.blob.core.windows.net/spotpics/sp55445.jpg",
+      "id": 31
+    },
+    {
+      "title": "Ladies Finger",
+      "price": 35,
+      "category": "vegetables",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0432/2849/6022/products/lady-finger_434x.jpg?v=1603233095",
+      "id": 32
+    },
+    {
+      "title": "Mint",
+      "price": 10,
+      "category": "Leafy Vegetables",
+      "imageUrl": "https://cdn-prod.medicalnewstoday.com/content/images/articles/275/275944/mint-on-a-wooden-table.jpg",
+      "id": 33
+    },
+    {
+      "title": "Onion",
+      "price": 25,
+      "category": "Spices",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "id": 34
+    },
+    {
+      "title": "Garlic",
+      "price": 70,
+      "category": "Spices",
+      "imageUrl": "https://www.healthdigest.com/img/gallery/this-is-what-happens-when-you-eat-garlic-every-day/l-intro-1632366199.jpg",
+      "id": 35
+    },
+    {
+      "title": "Potato",
+      "price": 20,
+      "category": "vegetables",
+      "imageUrl": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2020/07/potatoes-1594205506.jpg",
+      "id": 36
+    },
+    {
+      "title": "Pumpkin ",
+      "price": 20,
+      "category": "vegetables",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL3GidUVX2dg12mH-QSStcOXzSIZZTb3dMgg&usqp=CAU",
+      "id": 37
+    },
+    {
+      "title": "Radish",
+      "price": 30,
+      "category": "vegetables",
+      "imageUrl": "https://feeds.abplive.com/onecms/images/uploaded-images/2021/09/10/8b9ed925f0e2fed9e9aef3d7624aa63c_original.jpg",
+      "id": 38
+    },
+    {
+      "title": "Ridge Gourd",
+      "price": 20,
+      "category": "vegetables",
+      "imageUrl": "https://i.etsystatic.com/8307866/r/il/5d0c06/2279487997/il_570xN.2279487997_ojwo.jpg",
+      "id": 39
+    },
+    {
+      "title": "Scarlet Gourd",
+      "price": 25,
+      "category": "vegetables",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRafAUAE65KaGN3jlYD1Q2ZTAETUHXttsy4mA&usqp=CAU",
+      "id": 40
+    },
+    {
+      "title": "Snake Gourd ",
+      "price": 25,
+      "category": "vegetables",
+      "imageUrl": "https://www.ayurtimes.com/wp-content/uploads/2014/10/Snake-Gourd.jpg",
+      "id": 41
+    },
+    {
+      "title": "Apple",
+      "price": 220,
+      "category": "Fruits",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHOMl_94cFvN1JX81i_R8Q1o9AmNjkXxElBg&usqp=CAU",
+      "id": 42
+    },
+    {
+      "title": "Black Grape",
+      "price": 80,
+      "category": "Fruits",
+      "imageUrl": "https://images.healthshots.com/healthshots/en/uploads/2022/01/18163418/black-grapes.jpg",
+      "id": 43
+    },
+    {
+      "title": "Cherry",
+      "price": 600,
+      "category": "Fruits",
+      "imageUrl": "https://c.ndtvimg.com/2019-02/27ddh15o_cherry_625x300_04_February_19.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886",
+      "id": 44
+    },
+    {
+      "title": "Mutton",
+      "price": 750,
+      "category": "Meat",
+      "imageUrl": "https://www.bigbasket.com/media/uploads/p/xxl/40048912_4-fresho-mutton-curry-cut-from-whole-carcass-antibiotic-residue-free-growth-hormone-free-8-10-pcs.jpg",
+      "id": 45
+    },
+    {
+      "title": "Milk",
+      "price": 55,
+      "category": "Milk Products",
+      "imageUrl": "https://i1.wp.com/www.eastmojo.com/wp-content/uploads/2021/06/cover-milk-1.jpg?fit=1200%2C675",
+      "id": 46
+    },
+    {
+      "title": "Butter",
+      "price": 490,
+      "category": "Milk Products",
+      "imageUrl": "https://post.healthline.com/wp-content/uploads/2021/04/butter-curls-1200x628-facebook.jpg",
+      "id": 47
+    },
+    {
+      "title": "Ghee",
+      "price": 400,
+      "category": "Milk Products",
+      "imageUrl": "https://www.forestessentialsindia.com/blog/wp-content/uploads/2020/01/720_404_1-1.jpg",
+      "id": 48
+    },
+    {
+      "title": "Paneer",
+      "price": 320,
+      "category": "Milk Products",
+      "imageUrl": "https://cdn.backyardgoats.iamcountryside.com/wp-content/uploads/sites/2/2019/03/shutterstock_1096061972.jpg",
+      "id": 49
+    },
+    {
+      "title": "Garlic bread ",
+      "price": 40,
+      "category": "Bread",
+      "imageUrl": "https://static01.nyt.com/images/2018/12/11/dining/as-garlic-bread/as-garlic-bread-articleLarge.jpg",
+      "id": 50
+    },
+    {
+      "title": "cheese bread",
+      "price": 120,
+      "category": "Bread",
+      "imageUrl": "https://1.bp.blogspot.com/-igQmOtBrXHE/XelAd_lwDVI/AAAAAAAAuD0/2kbLCW2tli4CNq9dpdfDS9XNNGUzVdRbgCLcBGAsYHQ/s1600/Cheesy%2BGarlic%2BFrench%2BBread-min.jpg",
+      "id": 51
+    },
+    {
+      "title": "milk bread",
+      "price": 20,
+      "category": "Bread",
+      "imageUrl": "https://assets.bonappetit.com/photos/5c62e4a3e81bbf522a9579ce/4:3/w_3004,h_2253,c_limit/milk-bread.jpg",
+      "id": 52
+    },
+    {
+      "title": "Brown Bread",
+      "price": 50,
+      "category": "Bread",
+      "imageUrl": "https://www.jessicagavin.com/wp-content/uploads/2020/04/whole-wheat-bread-21-1200-500x375.jpg",
+      "id": 53
+    },
+    {
+      "title": "Whole Wheat Bread",
+      "price": 50,
+      "category": "Bread",
+      "imageUrl": "https://upload.oola.com/rola/uploads/2021/12/slices-of-whole-wheat-bread-ode6fd5-2.jpg",
+      "id": 54
+    },
+    {
+      "title": "Lavash bread",
+      "price": 170,
+      "category": "Bread",
+      "imageUrl": "https://www.thespruceeats.com/thmb/tt6lWdhGxJt-ZF8U7Wd52KmB2Rk=/2403x2403/smart/filters:no_upscale()/lavash-flat-bread-recipe-2355383-hero-01-3dd657148ccc41eca33a5217578394c6.jpg",
+      "id": 55
+    },
+    {
+      "title": "Baguette bread",
+      "price": 65,
+      "category": "Bread",
+      "imageUrl": "https://www.flamingotravels.co.in/blog/wp-content/uploads/2020/04/French-Baguette.jpg",
+      "id": 56
+    },
+    {
+      "title": "Chicken",
+      "price": 214.41,
+      "category": "Meat",
+      "imageUrl": "https://5.imimg.com/data5/LD/CN/TG/SELLER-21607275/fresh-chicken-500x500.jpeg",
+      "id": 57
+    },
+    {
+      "title": "Lamb",
+      "price": 700,
+      "category": "Meat",
+      "imageUrl": "https://4.imimg.com/data4/PK/LW/MY-25368938/raw-mutton-500x500.jpg",
+      "id": 58
+    }
+  ]
+}

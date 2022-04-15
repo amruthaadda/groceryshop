@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-md-6 firs-div">
+        <form [formGroup]="productForm" (ngSubmit)="onSave()">
+            <div>
+                <label for="">Title</label><br>
+                <input #title required formControlName="title" type="text" style=" width: -webkit-fill-available">
+                <div *ngIf="validationError('title')" class="alert alert-danger"
+                    style="color: red;  width: -webkit-fill-available">Title is required</div>
+            </div>
+            <div>
+                <label for="">Price</label><br>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"> &#8377e; </span>
+                    <input #price required formControlName="price" type="number" (keypress)="onKeyPress($event)" min="0"
+                        style="width: 95.7%;">
+                </div>
+                <div class="alert alert-danger" *ngIf="validationError('price')"
+                    style="color: red;  width: -webkit-fill-available">Price required</div>
+            </div>
+            <div>
+                <label for="">Category</label><br>
+                <!-- <select  formControlName="category" name="" id="">
+                    <option value=""></option>
+                </select> -->
+                <input required formControlName="category" type="text" list="html_elements"
+                    style=" width: -webkit-fill-available">
+                <datalist id="html_elements"  style=" width: 100%">
+                    <option *ngFor="let category of categories " [value]="category"></option>
+                </datalist>
+                <div class="alert alert-danger" *ngIf="validationError('category')"
+                    style="color: red;  width: -webkit-fill-available">Category required</div>
+
+            </div>
+            <div>
+                <label>Image URL</label><br>
+                <input #imageUrl formControlName="imageUrl" type="url" required style=" width: -webkit-fill-available">
+                <div class="alert alert-danger" *ngIf="validationError('imageUrl')"
+                    style="color: red;  width: -webkit-fill-available">Image URL required</div>
+            </div>
+            <div>
+                <button class="btn btn-primary" type="submit" [disabled]="productForm.invalid">Save</button>
+                <button *ngIf="showDelete" type="button" class="btn btn-danger" (click)="onDelete()">Delete</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <div *ngIf="title.value || price.value || imageUrl.value" class="card" >
+            <img [src]="imageUrl.value" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{title.value}}</h5>
+              <p class="card-text">{{ price.value | currency: 'INR' : true }}</p>
+            </div>
+          </div>
+    </div>
+
+</div>
+

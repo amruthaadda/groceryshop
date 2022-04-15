@@ -1,0 +1,25 @@
+<main class="form-signin text-center">
+    <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+  
+      <div *ngIf="isInvalidCredentials" style="color: red;">Invallid Email or Password</div>
+      <div class="form-floating">
+          <input  required formControlName="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address <span style="color: red;">*</span></label> 
+        <div class="validationError" *ngIf="validationError('email')">Email is requuired</div>
+      </div>
+      <div class="form-floating">
+        <input required formControlName="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password <span style="color: red;">*</span></label>
+        <div class="validationError" *ngIf="validationError('password')">Password is requuired</div>
+      </div>
+  
+      <div class="checkbox mb-3">
+        <label>
+          <input formControlName="rememberMe" type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit" [disabled]="signInForm.invalid">Sign in</button>
+    </form>
+  </main>
+  

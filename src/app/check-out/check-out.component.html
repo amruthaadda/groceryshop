@@ -1,0 +1,32 @@
+<h2>Shipping</h2>
+<div class="row">
+    <div class="col-6">
+        <form [formGroup]="shippingForm" (ngSubmit)="onSave()">
+            <div>
+                <label>Name</label><br>
+                <input type="text" formControlName="name" required>
+                <div class="validationError" *ngIf="validationError('name')">Name is required</div>
+            </div>
+            <div>
+                <label for="">Address</label><br>
+                <input type="text" formControlName="addressLine1" placeholder="Line 1" required>
+                <div class="validationError" *ngIf="validationError('addressLine1')">Address is required</div>
+                <br><br>
+                <input type="text" formControlName="addressLine2" placeholder="Line 2" required>
+                <div class="validationError" *ngIf="validationError('addressLine2')">Address is required</div>
+            </div>
+            <div>
+                <label for="">City</label><br>
+                <input type="text" formControlName="city" required>
+                <div class="validationError" *ngIf="validationError('city')">City is required</div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary" [disabled]="shippingForm.invalid">Place Order</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-6">
+        <shopping-cart-summary [cartItems]="cartItems"></shopping-cart-summary>
+    </div>
+</div>
+

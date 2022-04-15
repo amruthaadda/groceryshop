@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mb-4">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">Grocery Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/shopping-cart" >Shopping Cart
+                        <span class="badge rounded-pill bg-info">{{ itemsQuantity }}</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" *ngIf="!isLoggedIn">
+                    <a class="nav-link" routerLink="/login">Login</a>
+                </li>
+
+                <li ngbDropdown *ngIf="isLoggedIn" class="nav-item dropdown ">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown"
+                        aria-expanded="false">{{ isLoggedIn ? userName : 'User Name' }}</a>
+                    <ul ngbDropdownMenu class="dropdown-menu " aria-labelledby="dropdown01">
+                        <li><a class="dropdown-item" routerLink="/my/orders">My Orders</a></li>
+                        <ng-container *ngIf="isAdmin">
+                            <li><a class="dropdown-item" routerLink="/admin/orders">Manage Orders</a></li>
+                            <li><a class="dropdown-item" routerLink="/admin/products">Manage Products</a></li>
+                        </ng-container>
+                        <li><a class="dropdown-item" (click)="logOut()">Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
