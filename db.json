@@ -51,7 +51,20 @@
       "id": 1
     }
   ],
-  "cart-items": [],
+  "cart-items": [
+    {
+      "product": {
+        "title": "Spinach",
+        "price": 20,
+        "category": "Leafy Vegetables",
+        "imageUrl": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpbmFjaHxlbnwwfHwwfHw%3D&w=1000&q=80",
+        "id": 14
+      },
+      "quantity": 1,
+      "shopping-cartId": "1",
+      "id": 1
+    }
+  ],
   "orders": [
     {
       "userId": 1,
